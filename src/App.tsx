@@ -90,18 +90,26 @@ export default function App() {
             </button>
           </nav>
 
-          {/* Clean Facebook CTA */}
-          <div className="flex items-center space-x-4">
+          {/* Clean Facebook CTA & Order Button */}
+          <div className="flex items-center space-x-6">
             <a 
               href="https://www.facebook.com/profile.php?id=61561268035084" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="hidden sm:inline-flex items-center space-x-2 text-xs font-semibold uppercase tracking-wider text-[#10241A] hover:opacity-80 transition-opacity border-b border-[#10241A] pb-0.5"
+              className="hidden lg:inline-flex items-center space-x-2 text-xs font-semibold uppercase tracking-wider text-[#10241A] hover:opacity-80 transition-opacity border-b border-[#10241A] pb-0.5"
               id="nav-facebook-btn"
             >
               <span>Facebook</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </a>
+
+            <button 
+              onClick={() => scrollToSection('kontakt')}
+              className="inline-flex items-center bg-[#10241A] text-[#FBF9F4] hover:bg-[#B88B2A] px-5 py-2.5 text-xs font-semibold uppercase tracking-widest transition-colors cursor-pointer"
+              id="header-order-btn"
+            >
+              Zamów
+            </button>
 
             {/* Mobile Menu Icon */}
             <button 
@@ -550,9 +558,6 @@ export default function App() {
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-12 text-xs text-[#FBF9F4]/50 text-center sm:text-left">
             <p>
               &copy; {new Date().getFullYear()} Domowe Obiady. Wszystkie prawa zastrzeżone.
-            </p>
-            <p className="font-light">
-              Projekt kuchni Mokotów &bull; Rzemieślnicza jakość
             </p>
           </div>
 

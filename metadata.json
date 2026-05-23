@@ -1,5 +1,5 @@
 {
-  "name": "Domowe Obiady i Wyroby Garmażeryjne",
+  "name": "Domowe Obiady",
   "description": "Profesjonalna strona i menu dla domowych obiadów i wyrobów garmażeryjnych na zamówienie w Warszawie.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
